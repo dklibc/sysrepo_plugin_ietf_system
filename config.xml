@@ -1,0 +1,38 @@
+<system xmlns="urn:ietf:params:xml:ns:yang:ietf-system">
+  <hostname>r101.lan</hostname>
+  <location>
+    Moscow city, Leninsky prospect,
+    5d floor, office 10101
+  </location>
+  <clock>
+    <timezone-utc-offset>180</timezone-utc-offset>
+  </clock>
+  <ntp>
+    <server>
+      <name>ntp1</name>
+      <udp>
+        <address>ntp1.lan</address>
+      </udp>
+    </server>
+    <server>
+      <name>ntp2</name>
+      <udp>
+        <address>ntp2.lan</address>
+      </udp>
+    </server>
+  </ntp>
+  <dns-resolver>
+    <server>
+     <name>LAN DNS</name>
+     <udp-and-tcp>
+       <address>10.0.254.22</address>
+     </udp-and-tcp>
+    </server>
+    <server>
+      <name>Google DNS</name>
+      <udp-and-tcp>
+        <address>8.8.8.8</address>
+      </udp-and-tcp>
+    </server>
+  </dns-resolver>
+</system>
