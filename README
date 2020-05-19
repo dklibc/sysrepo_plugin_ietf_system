@@ -1,0 +1,6 @@
+== Sysrepo plugin for ietf-system.yang module ==
+
+Very simple. Our first plugin for sysrepo.
+
+Depends: >= sysrepo 1.0
+
